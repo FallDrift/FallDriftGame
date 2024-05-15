@@ -1,0 +1,129 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+	<meta charset="UTF-8">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>剑心之誓官网</title>  
+	<!-- 定义网页名称 -->  
+
+	<style>  
+
+ 		 #header-image {  
+            		display: block;  
+            		margin: 0 auto; /* 水平居中 */  
+            		max-width: 100%; /* 图片最大宽度为容器宽度 */  
+            		height: auto; /* 保持图片比例 */  
+        	}  
+
+		.centered-h1 {  
+            		text-align: center;  
+        	}
+ 		/* 为特定的 h1 元素添加样式以使其文本居中 */  
+
+  		 body {    
+            		color: black;   
+            		font-family: '楷体', sans-serif;    
+           		margin: 20px;  
+            		background-color: #F5DEB3; 
+		}  
+		/* 定义字体 */  
+
+		table {  
+			border-collapse: collapse;  
+			width: 100%; 
+		}  
+		/* 定义表格样式 */    
+
+		th, td {  
+			border:2px solid #DDD;  
+			padding: 8px;  
+			text-align: left;  
+  		}  
+		/* 定义单元格样式 */    
+
+		tr:nth-child(odd) {  
+			background-color: #F0FFFF;  
+		}  
+		tr:nth-child(even) {  
+			background-color: #7AC5CD;  
+		}  
+		/* 背景色设计 */
+
+ 		.collapsable {  
+			cursor: pointer;  
+		}  
+		.hidden {  
+			display: none;  
+		}  
+		/* 隐藏定义 */
+ 
+		.red-text {  
+    			color: red;  
+		}
+		 /*红色汉字 */
+
+	</style>  
+</head>  
+
+<body style="background-color: #98F5FF;">  
+<!-- 设置颜色 -->  
+ 	
+	  <img id="header-image" src="https://gitee.com/FallDriftGame/game/raw/master/FALLDRIFTGAME.png" alt="网页顶部图片">
+	
+	<h1 class="centered-h1">落雪游戏 —— 于落雪中带来温暖</h1>
+	<hr />
+	<br><br>
+
+	<h2>自我介绍：</h2> 
+	<p>我是一位个人游戏开发者，致力于为玩家提供丰富多样的游戏体验和优质的游戏内容。我会注重游戏的创新性和趣味性，不断尝试新的游戏玩法和元素，以满足玩家的不同需求。<br>目前，我仅开发了<a href=" https://falldrift.github.io/jxzs/" target="_blank">《剑心之誓》</a>一款游戏。作为第一款游戏，剑心之誓仍有许多不足，我也处于一边开车一边造车的过程中，希望各位可以多多包容。</p>
+
+	<br><br>
+
+	<h2>旗下游戏：</h2>  
+
+	<table>  
+		<thead>  
+			<tr>  
+				<th>点击下方游戏名查看游戏介绍：</th>  
+			</tr>  
+		</thead>  
+		<tbody>  
+    			<tr class="collapsable" onclick="toggleRow(this)">  
+      				<td>剑心之誓</td>  
+			</tr>  
+    			<tr class="hidden">  
+      				<td colspan="3">在修炼和战斗中不断成长，探索修真世界，揭开古老的秘密。这是一个奇幻绝伦的世界，玩家将会扮演李逍遥，体验到修炼之路的艰辛与成就，解锁不同的技能，参与精彩纷呈的战斗和冒险，尽享无尽的乐趣。<br>游戏详情：<a href=" https://falldrift.github.io/jxzs/" target="_blank">《剑心之誓》官网</a></td>  
+    			</tr>  
+   			<tr class="collapsable" onclick="toggleRow(this)">  
+      				<td>虚位以待</td>  
+    			</tr>  
+    			<tr class="hidden">  
+      				<td colspan="3">虚位以待。</td>  
+    			</tr>  
+  		</tbody>  
+	</table>  
+	<!-- 更新公告部分 -->
+
+	<script>  
+		function toggleRow(row) {  
+  			var nextRow = row.nextElementSibling;  
+			if (nextRow.style.display === 'none') {  
+   			nextRow.style.display = 'table-row';  
+	 		row.classList.add('collapsed');  
+			} else {  
+    			nextRow.style.display = 'none';  
+			row.classList.remove('collapsed');  
+  		}  
+	}  
+	</script>  
+	<!-- 更新公告用到的js代码 -->  
+
+	<br><br>
+
+	<h2>特别鸣谢：</h2> 
+	<p>感谢深林孤鹰及其鹰歌引擎的大力支持！<br>感谢吾爱、落冥迦、金牌服务在游戏开发过程中给予的帮助！<br><b>感谢每一位支持我，陪伴我走下去的所有玩家！<br></p>
+
+
+
+</body>  
+</html>
